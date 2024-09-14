@@ -1,9 +1,8 @@
-import React from "react";
 import Contact from "./Contact";
-
+import s from "./ContactList.module.css";
 const ContactList = ({ contacts, onDeleteContact }) => {
   return (
-    <ul>
+    <ul className={s.contactList}>
       {contacts.map((contact) => (
         <Contact
           key={contact.id}
